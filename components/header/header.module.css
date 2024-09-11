@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   position: fixed;
-  height: 3.75rem;
+  height: 4rem;
   width: 100vw;
   z-index: 9999;
   background-color: #ffffff;
