@@ -1,8 +1,21 @@
 .header {
-  height: 4.5vh;
-  width: 100vw;
-  color: black;
   display: flex;
   justify-content: space-between;
+  position: fixed;
+  height: 4.5vh;
+  width: 100vw;
+  z-index: 9999;
   background-color: #fff9ea;
+}
+
+.ul {
+  display: flex;
+  gap: 1rem;
+  margin: auto 0;
+  padding: 0 1rem;
+}
+
+.logo {
+  max-height: 2.5rem;
+  max-width: 2.5rem;
 }
