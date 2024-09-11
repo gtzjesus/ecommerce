@@ -12,10 +12,15 @@
   display: flex;
   gap: 1rem;
   margin: auto 0;
-  padding: 0 1rem;
+  padding: 0 1.5rem;
 }
 
 .logo {
   max-height: 2.5rem;
   max-width: 2.5rem;
+}
+
+.icon {
+  max-height: 1.5rem;
+  max-width: 1.5rem;
 }
