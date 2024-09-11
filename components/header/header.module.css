@@ -1,0 +1,8 @@
+.header {
+  height: 4.5vh;
+  width: 100vw;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff9ea;
+}
