@@ -1,33 +1,46 @@
 import Link from 'next/link';
-import styles from './header.module.css';
 import Image from 'next/image';
+import styles from './header.module.css';
+
 import logo from '../../assets/icons/world.webp';
 import search from '../../assets/icons/search.webp';
 import account from '../../assets/icons/account.webp';
 import bag from '../../assets/icons/bag.webp';
 import menu from '../../assets/icons/menu.webp';
 
+const iconLinks = [
+  { href: '/search', src: search, alt: 'search', className: styles.icon },
+  { href: '/account', src: account, alt: 'account', className: styles.icon },
+  { href: '/bag', src: bag, alt: 'bag', className: styles.icon },
+  { href: '/menu', src: menu, alt: 'menu', className: styles.icon },
+];
+
 export default function Header() {
   return (
     <div className={styles.header}>
+      {/* Logo Section */}
       <ul className={styles.ul}>
-        <Link href="/">
-          <Image className={styles.logo} src={logo} alt="ecommerce" priority />
-        </Link>
+        <li>
+          <Link href="/">
+            <Image
+              className={styles.logo}
+              src={logo}
+              alt="ecommerce"
+              priority
+            />
+          </Link>
+        </li>
       </ul>
+
+      {/* Icons Section */}
       <ul className={styles.ul}>
-        <Link href="/search">
-          <Image className={styles.icon} src={search} alt="search" priority />
-        </Link>
-        <Link href="/account">
-          <Image className={styles.icon} src={account} alt="account" priority />
-        </Link>
-        <Link href="/bag">
-          <Image className={styles.icon} src={bag} alt="bag" priority />
-        </Link>
-        <Link href="/menu">
-          <Image className={styles.icon} src={menu} alt="menu" priority />
-        </Link>
+        {iconLinks.map(({ href, src, alt, className }) => (
+          <li key={href}>
+            <Link href={href}>
+              <Image className={className} src={src} alt={alt} priority />
+            </Link>
+          </li>
+        ))}
       </ul>
     </div>
   );
