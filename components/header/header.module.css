@@ -1,11 +1,18 @@
 .header {
+  transition: top 0.3s; /* Smooth transition for hiding/showing the header */
+  position: fixed;
   display: flex;
   justify-content: space-between;
-  position: fixed;
+  width: 100%;
   height: 4rem;
-  width: 100vw;
-  z-index: 9999;
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Ensure the header stays on top of other elements */
   background-color: #ffffff;
+}
+
+.hidden {
+  top: -100px; /* Adjust this value based on the height of your header */
 }
 
 .ul {

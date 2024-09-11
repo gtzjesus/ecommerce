@@ -1,3 +1,5 @@
+'use client';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from './header.module.css';
@@ -16,8 +18,32 @@ const iconLinks = [
 ];
 
 export default function Header() {
+  const [showHeader, setShowHeader] = useState(true);
+  const [lastScrollTop, setLastScrollTop] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollTop =
+        window.pageYOffset || document.documentElement.scrollTop;
+
+      if (currentScrollTop > lastScrollTop) {
+        // Scrolling down
+        setShowHeader(false);
+      } else {
+        // Scrolling up
+        setShowHeader(true);
+      }
+
+      setLastScrollTop(currentScrollTop <= 0 ? 0 : currentScrollTop); // For Mobile or negative scrolling
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [lastScrollTop]);
+
   return (
-    <div className={styles.header}>
+    <div className={`${styles.header} ${!showHeader ? styles.hidden : ''}`}>
       {/* Logo Section */}
       <ul className={styles.ul}>
         <li>
