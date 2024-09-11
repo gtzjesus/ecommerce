@@ -2,10 +2,10 @@
   display: flex;
   justify-content: space-between;
   position: fixed;
-  height: 4.5vh;
+  height: 3.75rem;
   width: 100vw;
   z-index: 9999;
-  background-color: #fff9ea;
+  background-color: #ffffff;
 }
 
 .ul {
