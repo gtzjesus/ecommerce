@@ -3,13 +3,20 @@
   width: 100vw;
   display: flex;
   flex-direction: column;
-  font-size: 1rem;
+  font-size: 0.75rem;
   font-family: 'Roboto Condensed', sans-serif;
 }
 
 .footerItem {
   display: flex;
   justify-content: space-between;
-  padding: 10px 14px;
+  padding: 10px 24px;
   cursor: pointer;
+}
+
+.hrLine {
+  border: 0; /* Remove default border */
+  height: 1px; /* Set height to make it thinner */
+  background-color: rgba(0, 0, 0, 0.25); /* Set color with low opacity */
+  margin: 0; /* Optional: remove default margins */
 }

@@ -12,7 +12,7 @@ function FooterItem({ num, title, currentOpen, onOpen, children }) {
   }
   return (
     <>
-      <hr />
+      <hr className={styles.hrLine} />
       <div className={styles.footerItem} onClick={handleToggle}>
         <h2>{title}</h2>
         <p>{isOpen ? '-' : '+'}</p>
