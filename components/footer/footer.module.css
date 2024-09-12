@@ -1,0 +1,14 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.footerItem {
+  padding: 20px 24px;
+  cursor: pointer;
+  display: flex;
+  grid-template-columns: auto 1fr auto;
+  column-gap: 24px;
+  row-gap: 32px;
+  align-items: center;
+}
