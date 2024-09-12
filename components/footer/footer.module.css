@@ -3,7 +3,7 @@
   width: 100vw;
   display: flex;
   flex-direction: column;
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   font-family: 'Roboto Condensed', sans-serif;
 }
 
@@ -19,4 +19,8 @@
   height: 1px; /* Set height to make it thinner */
   background-color: rgba(0, 0, 0, 0.25); /* Set color with low opacity */
   margin: 0; /* Optional: remove default margins */
+}
+
+.copyright {
+  padding: 10px 24px;
 }

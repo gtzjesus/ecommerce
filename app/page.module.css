@@ -32,7 +32,6 @@
   flex-direction: column;
   gap: 32px;
   grid-row-start: 2;
-  height: 200vh;
 }
 
 .main ol {

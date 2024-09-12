@@ -49,6 +49,7 @@ function Footer() {
           {element.text}
         </FooterItem>
       ))}
+      <div className={styles.copyright}>&copy; 2024 worldhello</div>
     </div>
   );
 }
