@@ -12,16 +12,12 @@ function FooterItem({ num, title, currentOpen, onOpen, children }) {
   }
   return (
     <>
-      {/* <!-- Main Container with state dynamic class names --> */}
-      <div className={styles.footerItem}>
-        <div className={`${isOpen ? 'open' : ''}`} onClick={handleToggle}>
-          <h2 className="number">{num < 9 ? `0${num + 1}` : num + 1}</h2>
-          <h2>{title}</h2>
-          <p>{isOpen ? '-' : '+'}</p>
-          {isOpen && <p>{children}</p>}
-        </div>
-      </div>
       <hr />
+      <div className={styles.footerItem} onClick={handleToggle}>
+        <h2>{title}</h2>
+        <p>{isOpen ? '-' : '+'}</p>
+      </div>
+      <div className={styles.footerItem}>{isOpen && <p>{children}</p>}</div>
     </>
   );
 }
