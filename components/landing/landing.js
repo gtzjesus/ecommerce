@@ -15,7 +15,7 @@ export default function Landing() {
     // Change image every 5 seconds (5000 milliseconds)
     const intervalId = setInterval(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 5000);
+    }, 15000);
 
     // Clean up interval on component unmount
     return () => clearInterval(intervalId);
