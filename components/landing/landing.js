@@ -5,7 +5,7 @@ import landing from '../../assets/backgrounds/landing.webp'
 export default function Landing() {
   return (
     <div className={styles.landing}>
-      <Image src={landing} alt="landing" />
+      <Image className={styles.landingImage} src={landing} alt="landing" />
     </div>
   );
 }

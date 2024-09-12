@@ -1,9 +1,7 @@
 .landing {
-  position: relative;
-
-  overflow: hidden; /* Hide overflow to prevent scrollbars */
-  display: flex;
-  align-items: center; /* Center the content vertically */
-  justify-content: center; /* Center the content horizontally */
-  background-size: cover; /* Make sure the image covers the entire area */
+  background-color: pink;
+}
+.landingImage {
+  width: 100%;
+  height: 100%;
 }
