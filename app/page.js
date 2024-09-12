@@ -6,9 +6,9 @@ export default function Home() {
   return (
     <>
       <Header />
-      <div className={styles.page}>
-        <main className={styles.main}><Landing /></main>
-      </div>
+      <main className={styles.main}>
+        <Landing />
+      </main>
     </>
   );
 }
