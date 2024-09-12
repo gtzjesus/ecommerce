@@ -18,9 +18,9 @@ const hooksData = [
     buttonText: 'Browse',
   },
   {
-    title: 'Jordans',
+    title: 'Reded Out',
     heading: 'Stand Out',
-    description: 'Whited-out and stylish sneakers for any occasion.',
+    description: 'Reded-out and stylish sneakers for any occasion.',
     buttonText: 'Explore',
   },
 ];
