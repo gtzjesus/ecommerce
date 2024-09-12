@@ -46,28 +46,3 @@ a {
 /* SCROLL STYLES */
 
 /* Global styles (e.g., styles/global.css or in a global style component) */
-
-/* WebKit Browsers (Chrome, Safari, Edge) */
-::-webkit-scrollbar {
-  width: 12px; /* Width of the scrollbar */
-}
-
-::-webkit-scrollbar-track {
-  background: transparent; /* Background of the scrollbar track */
-}
-
-::-webkit-scrollbar-thumb {
-  background: rgba(0, 0, 0, 0.5); /* Color of the scrollbar thumb */
-  border-radius: 6px; /* Rounded corners for the scrollbar thumb */
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: rgba(0, 0, 0, 0.8); /* Darker color when hovered */
-}
-
-/* Firefox */
-html {
-  scrollbar-width: thin; /* Makes the scrollbar thinner */
-  scrollbar-color: rgba(0, 0, 0, 0.5) transparent; /* Scrollbar thumb color and track color */
-}
-
