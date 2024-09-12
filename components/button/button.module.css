@@ -1,0 +1,25 @@
+.button {
+    background-color: black; /* Black background */
+    color: white; /* White text */
+    border: none; /* Remove default border */
+    border-radius: 50px; /* Rounded corners, adjust size as needed */
+    padding: 10px 20px; /* Add some padding inside the button */
+    font-size: 16px; /* Adjust font size */
+    font-family: Arial, sans-serif; /* Font family, adjust if needed */
+    cursor: pointer; /* Show a pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition effects */
+  }
+  
+  .button:hover {
+    background-color: #333; /* Darker background on hover */
+    transform: scale(1.05); /* Slightly scale up the button on hover */
+  }
+  
+  .button:focus {
+    outline: none; /* Remove default outline */
+  }
+  
+  .button:active {
+    background-color: #555; /* Even darker background when the button is pressed */
+  }
+  
